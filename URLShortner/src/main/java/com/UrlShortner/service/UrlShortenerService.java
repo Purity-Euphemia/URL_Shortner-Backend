@@ -30,7 +30,7 @@ public class UrlShortenerService {
     }
 
     public String getOriginalUrl(String shortKey) {
-        UrlMapping mapping = repository.findById(shortKey).map(UrlMapping::getOriginalUrl).orElseThrow(() -> new RuntimeException("Url not found"));
+        UrlMapping mapping = repository.findById(shortKey).orElseThrow(() -> new RuntimeException("Url not found"));
         return mapping.getOriginalUrl();
     }
 }
