@@ -8,7 +8,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.4</version> <!-- Use stable version -->
-        <relativePath/> <!-- Required for Spring Boot -->
+<!--        <relativePath/> &lt;!&ndash; Required for Spring Boot &ndash;&gt;-->
     </parent>
 
     <groupId>com.UrlShortner</groupId>
@@ -47,7 +47,8 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
-            <version>4.0.0-M2</version>
+            <version>3.2.4</version>
+<!--            <version>4.0.0-M2</version>-->
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
