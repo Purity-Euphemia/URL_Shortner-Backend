@@ -3,9 +3,11 @@ package com.UrlShortner.security;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
+@Component
 public class JwtUtil {
         private static final String SECRET_KEY = "my_jwt_Secret";
         private final long EXPIRATION = 864000000;
