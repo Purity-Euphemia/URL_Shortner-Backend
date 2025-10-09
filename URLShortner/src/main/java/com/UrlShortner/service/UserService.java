@@ -22,7 +22,7 @@ public class UserService implements UserDetailsService {
 
     public void register(User user) {
         if (repository.existsByUsername(user.getUsername())) {
-            throw new RuntimeException("Username already exists");
+            throw new IllegalArgumentException("Username already exists");
         }
         user.setPassword(encoder.encode(user.getPassword()));
         repository.save(user);
